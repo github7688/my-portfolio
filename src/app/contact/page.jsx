@@ -17,7 +17,7 @@ function ContactPage(){
                         <div className="md:w-1/2">
                             <p className="text-2xl font-semibold mb-2">Connect with me</p>
                             <p>If you want to know more about me or my work, or if you would just
-                                like to say hello, send me a message. I'd love to hear from you.</p>
+                                like to say hello, send me a message. I&apos;d love to hear from you.</p>
                             <ContactForm />
                         </div>
 
