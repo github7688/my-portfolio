@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/Components/ContactForm.jsx", "src/app/api/send-sms/route.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/ContactForm.jsx", "src/app/api/send-sms/route.js"],
   "exclude": ["node_modules"]
 }
