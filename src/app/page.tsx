@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TextCarousel from "@/components/TextCarousel";
+import TextCarousel from "@/Components/TextCarousel";
 import Link from "next/link";
 import heroBg from "../../public/images/herobg.svg";
 import { RiInstagramLine } from "react-icons/ri";
