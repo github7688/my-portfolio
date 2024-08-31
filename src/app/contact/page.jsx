@@ -9,7 +9,7 @@ function ContactPage(){
 
 
     return(
-        <div className="w-full flex justify-center items-center p-4 ">
+        <div className="w-full flex justify-center items-center p-4">
                <section id="about" className="md:p-8">
                  <div className="container mx-auto">
                      <h2 className="text-5xl font-bold text-center mb-8">Contact</h2>
