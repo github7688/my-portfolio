@@ -12,11 +12,11 @@ const Sidebar = () =>{
                   alt="Profile Picture"
                   width={200} 
                   height={200}
-                  className="md:px-4 md:py-3 border  rounded-[50%]"
+                  className="md:px-4 md:py-3 border  rounded-full"
             />
         </div>
 
-           <nav className="flex flex-col  justify-around items-center py-3 border-b border-white h-full mt-5 mx-5">
+           <nav className="flex flex-col  justify-around items-center py-3 border border-white h-full mt-5 mx-5">
                <NavItem href="/">Home</NavItem>
                <NavItem href="/about">About</NavItem>
                <NavItem href="/contact">Contact</NavItem>
