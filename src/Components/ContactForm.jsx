@@ -42,7 +42,7 @@ const ContactForm = () => {
   return (
     <div className="border border-white mt-5">
       <form onSubmit={handleSubmit}>
-        <label className="block ml-2 mb-2 text-lg font-medium">
+        <label className="block mx-2 mb-2 text-lg font-medium">
           Name
         </label>
         <input
@@ -50,10 +50,10 @@ const ContactForm = () => {
           placeholder="Enter your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="text-sm block w-[calc(100%-16px)] p-2.5 mx-2 mb-2"
+          className="text-sm block w-11/12 p-2.5 mx-2 mb-2"
         />
 
-        <label className="block ml-2 mb-2 text-lg font-medium">
+        <label className="block mx-2 mb-2 text-lg font-medium">
           Email
         </label>
         <input
@@ -61,25 +61,25 @@ const ContactForm = () => {
           placeholder="Enter your email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="text-sm block w-[calc(100%-16px)] p-2.5 mx-2 mb-2"
+          className="text-sm block w-11/12 p-2.5 mx-2 mb-2"
         />
 
-        <label className="block ml-2 mb-2 text-lg font-medium">
+        <label className="block mx-2 mb-2 text-lg font-medium">
           Message
         </label>
         <textarea
-          placeholder="Enter your message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="mx-2 mb-2 h-24 p-2.5 text-sm w-[calc(100%-16px)]"
-        />
+  placeholder="Enter your message"
+  value={message}
+  onChange={(e) => setMessage(e.target.value)}
+          className="mx-2 mb-2 h-24 p-2.5 text-sm w-11/12"
+/>
 
-        <button
-          type="submit"
+<button
+  type="submit"
           className="ml-2 px-5 py-3 mt-2 mb-4 border border-white hover:border-black hover:bg-black hover:text-white"
-        >
-          Submit
-        </button>
+>
+  Submit
+</button>
       </form>
       {status && <p className={`${status == "Message sent successfully!" ? "text-green-600" : "text-red-600" } text-center  text-3xl mt-4`}>{status}</p>}
     </div>

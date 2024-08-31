@@ -19,9 +19,9 @@ const Sidebar = () =>{
            <nav className="flex flex-col  justify-around items-center py-3 h-full mt-5 mx-5">
                <NavItem href="/">Home</NavItem>
                <NavItem href="/about">About</NavItem>
-               <NavItem href="/contact">Contact</NavItem>
                <NavItem href="/skills">Skills</NavItem>
                <NavItem href="/education">Education</NavItem>
+               <NavItem href="/contact">Contact</NavItem>
            </nav>
     </div>
    )
