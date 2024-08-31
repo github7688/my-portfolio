@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 
 const Sidebar = () =>{
    return (
-    <div className="flex flex-col h-screen border-r-2 border-white md:w-1/4 lg:w-1/5">
-        <div className="flex justify-center ali items-center py-2 md:px-3">
+    <div className="flex flex-col h-screen border border-white md:w-1/4 lg:w-1/5">
+        <div className="flex justify-center items-center py-2 md:px-3">
            <Image src="/images/My_Profile_pic.jpeg" 
                   alt="Profile Picture"
                   width={200} 
@@ -16,7 +16,7 @@ const Sidebar = () =>{
             />
         </div>
 
-           <nav className="flex flex-col  justify-around items-center py-3 h-full mt-5 mx-5">
+           <nav className="h-full flex flex-col justify-around items-center py-3 mt-5 mx-5">
                <NavItem href="/">Home</NavItem>
                <NavItem href="/about">About</NavItem>
                <NavItem href="/skills">Skills</NavItem>
@@ -36,11 +36,12 @@ const NavItem = ({href, children}) =>{
       
     return (
        
-          <Link href={href} className={`flex items-center justify-center border py-2 w-full
-            ${isActive ? 'border-black bg-black text-white' : 'border-white hover:border-black hover:bg-black hover:text-white'}
-            transition-colors duration-300`}>
-            {children}
-          </Link>
+        <Link
+        href={href}
+        className={`flex items-center justify-center py-2 w-full transition-colors duration-300 ${isActive ? ' border border-black bg-black text-white' : ' border border-white hover:border-black hover:bg-black hover:text-white'}`}
+      >
+        {children}
+      </Link>
     
       );
 }
